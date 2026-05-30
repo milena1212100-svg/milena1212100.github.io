@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин велосипедов - Главная</title>
+    <style>
+        :root { --blue: #007bff; --light-gray: #f4f4f4; }
+        body { font-family: 'Helvetica', Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+
+        header { text-align: center; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .logo { max-width: 200px; margin-bottom: 15px; }
+        nav { display: flex; justify-content: center; gap: 20px; font-size: 13px; font-weight: bold; text-transform: uppercase; }
+        nav a { text-decoration: none; color: #333; }
+        nav a:hover { color: var(--blue); }
+
+        .container { display: flex; max-width: 1300px; margin: 30px auto; padding: 0 20px; }
+
+        .sidebar { width: 220px; flex-shrink: 0; font-size: 14px; }
+        .filter-title { font-weight: bold; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; display: block; }
+        .brand-item { display: flex; justify-content: space-between; margin-bottom: 8px; color: #666; }
+        .brand-item input { margin-right: 10px; }
+
+        .main { flex-grow: 1; padding-left: 40px; }
+        .category-title { font-size: 18px; margin-bottom: 20px; color: #555; }
+
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+
+        .card { position: relative; border: 1px solid #f0f0f0; padding-bottom: 15px; transition: 0.3s; }
+        .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+
+        .badge { position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,0.8); border: 1px solid #007bff; color: #007bff; padding: 2px 8px; font-size: 10px; text-transform: uppercase; font-weight: bold; }
+
+        .img-placeholder { width: 100%; height: 220px; background: #f9f9f9; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .img-placeholder img { width: 100%; height: auto; }
+
+        .info { padding: 15px; text-align: left; }
+        .price { font-weight: bold; font-size: 18px; margin-top: 10px; }
+        .model-name { font-size: 14px; height: 40px; overflow: hidden; color: #222; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://itsmybike.ru" alt="Logo" class="logo" style="height: 60px; width: auto;">
+        <nav>
+            <a href="home.html">Каталог</a>
+            <a href="ideipodarkov.html">Идеи подарков</a>
+            <a href="#">Бренды</a>
+            <a href="about.html">О нас</a>
+        </nav>
+    </header>
+<body>
+
+  
+    <!-- Основное содержимое страницы брендов -->
+    <main class="brands-container">
+        <h1 class="page-title">Бренды</h1>
+
+        <!-- Брэнд 1: 6KU -->
+        <div class="brand-row">
+            <div class="brand-logo-box bg-6ku">6KU</div>
+            <div class="brand-info">
+                <div>
+                    <h2 class="brand-name">6KU</h2>
+                    <p class="brand-description">Калифорнийский бренд 6KU производит доступные классические стальные синглспиды/фиксы и алюминиевые трековые велосипеды, способные на серьезные вещи как в городских джунглях, так и на специальном велотреке.</p>
+                </div>
+                <div class="brand-link-wrapper">
+                    <a href="home.html" class="brand-catalog-link">Смотреть все товары бренда 6KU →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Брэнд 2: ABUS -->
+        <div class="brand-row">
+            <div class="brand-logo-box"><div class="logo-abus">ABUS</div></div>
+            <div class="brand-info">
+                <div>
+                    <h2 class="brand-name">ABUS</h2>
+                    <p class="brand-description">Немецкий производитель высококлассных велосипедных замков, шлемов и систем безопасности, обеспечивающий безупречную защиту вашего байка с 1924 года.</p>
+                </div>
+                <div class="brand-link-wrapper">
+                    <a href="home.html" class="brand-catalog-link">Смотреть все товары бренда Abus →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Брэнд 3: Octopus -->
+        <div class="brand-row">
+            <div class="brand-logo-box"><span class="text-octopus">OCTOPUS</span></div>
+            <div class="brand-info">
+                <div>
+                    <h2 class="brand-name">Octopus</h2>
+                    <p class="brand-description">Популярный бренд, специализирующийся на качественных и доступных компонентах, рамах и готовых городских фикс-велосипедах. Идеальный выбор для тех, кто собирает свой первый кастом.</p>
+                </div>
+                <div class="brand-link-wrapper">
+                    <a href="home.html" class="brand-catalog-link">Смотреть все товары бренда Octopus →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Брэнд 4: Fuji -->
+        <div class="brand-row">
+            <div class="brand-logo-box"><span class="text-fuji">Fuji</span></div>
+            <div class="brand-info">
+                <div>
+                    <h2 class="brand-name">Fuji Bikes</h2>
+                    <p class="brand-description">Легендарный японский бренд со столетней историей. Известен своими культовыми городскими трековыми моделями Feather и Declaration, сочетающими в себе непревзойденный ретро-стиль и идеальный накат.</p>
+                </div>
+                <div class="brand-link-wrapper">
+                    <a href="home.html" class="brand-catalog-link">Смотреть все товары бренда Fuji →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Брэнд 5: Tsunami -->
+        <div class="brand-row">
+            <div class="brand-logo-box"><span class="text-tsunami">TSUNAMI</span></div>
+            <div class="brand-info">
+                <div>
+                    <h2 class="brand-name">Tsunami</h2>
+                    <p class="brand-description">Агрессивные, жесткие и супер-легкие алюминиевые и хромомолибденовые рамы для трека и критериумов. Модели SNM100 стали настоящим стандартом качества в мире современного фиксед-гира.</p>
+                </div>
+                <div class="brand-link-wrapper">
+                    <a href="home.html" class="brand-catalog-link">Смотреть все товары бренда Tsunami →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Брэнд 6: AEG -->
+        <div class="brand-row">
+            <div class="brand-logo-box"><span class="text-aeg">AEG</span></div>
+            <div class="brand-info">
+                <div>
+                    <h2 class="brand-name">AEG</h2>
+                    <p class="brand-description">Немецкий производитель высококачественных смазочных материалов, очистителей и специализированной химии для профессионального ухода за узлами велосипеда.</p>
+                </div>
+                <div class="brand-link-wrapper">
+                    <a href="home.html" class="brand-catalog-link">Смотреть все товары бренда AEG →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Брэнд 7: ASS SAVERS -->
+        <div class="brand-row">
+            <div class="brand-logo-box"><span class="text-asavers">ASS SAVERS</span></div>
+            <div class="brand-info">
+                <div>
+                    <h2 class="brand-name">ASS SAVERS</h2>
+                    <p class="brand-description">Умные складные быстросъемные крылья-брызговики из Швеции. Компактное и элегантное спасение для ваших брюк и спины от внезапной дорожной грязи.</p>
+                </div>
+                <div class="brand-link-wrapper">
+                    <a href="home.html" class="brand-catalog-link">Смотреть все товары бренда Ass Savers →</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        &copy; 2026 Магазин велосипедов WindBike. Все права защищены.
+    </footer>
+
+</body>
+</html>

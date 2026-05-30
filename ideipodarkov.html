@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин велосипедов - Главная</title>
+    <style>
+        :root { --blue: #007bff; --light-gray: #f4f4f4; }
+        body { font-family: 'Helvetica', Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+
+        header { text-align: center; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .logo { max-width: 200px; margin-bottom: 15px; }
+        nav { display: flex; justify-content: center; gap: 20px; font-size: 13px; font-weight: bold; text-transform: uppercase; }
+        nav a { text-decoration: none; color: #333; }
+        nav a:hover { color: var(--blue); }
+
+        .container { display: flex; max-width: 1300px; margin: 30px auto; padding: 0 20px; }
+
+        .sidebar { width: 220px; flex-shrink: 0; font-size: 14px; }
+        .filter-title { font-weight: bold; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; display: block; }
+        .brand-item { display: flex; justify-content: space-between; margin-bottom: 8px; color: #666; }
+        .brand-item input { margin-right: 10px; }
+
+        .main { flex-grow: 1; padding-left: 40px; }
+        .category-title { font-size: 18px; margin-bottom: 20px; color: #555; }
+
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+
+        .card { position: relative; border: 1px solid #f0f0f0; padding-bottom: 15px; transition: 0.3s; }
+        .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+
+        .badge { position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,0.8); border: 1px solid #007bff; color: #007bff; padding: 2px 8px; font-size: 10px; text-transform: uppercase; font-weight: bold; }
+
+        .img-placeholder { width: 100%; height: 220px; background: #f9f9f9; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .img-placeholder img { width: 100%; height: auto; }
+
+        .info { padding: 15px; text-align: left; }
+        .price { font-weight: bold; font-size: 18px; margin-top: 10px; }
+        .model-name { font-size: 14px; height: 40px; overflow: hidden; color: #222; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://itsmybike.ru" alt="Logo" class="logo" style="height: 60px; width: auto;">
+        <nav>
+            <a href="home.html">Каталог</a>
+            <a href="ideipodarkov.html">Идеи подарков</a>
+            <a href="brands.html">Бренды</a>
+            <a href="about.html">О нас</a>
+        </nav>
+    </header>
+
+
+        <div class="card">
+            <div class="badge">Новинка</div>
+            <div class="img-placeholder"><img src="tsunami1" alt="Bike"></div>
+            <div class="info">
+                <div class="model-name">Велосипед Tsunami SNM100 Matte Black</div>
+                <div class="price">48 900 ₽</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">Новинка</div>
+            <div class="img-placeholder"><img src="octobus55.jpg" alt="Bike"></div>
+            <div class="info">
+                <div class="model-name">Велосипед Fuji Feather 2024 Silver</div>
+                <div class="price">65 500 ₽</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-placeholder"><img src="octobus55.jpg" alt="Bike"></div>
+            <div class="info">
+                <div class="model-name">Велосипед Fuji Declaration Khaki</div>
+                <div class="price">44 200 ₽</div>
+            </div>
+        </div>
+    </div>
+</main>
+</div>
+
+</body>
+</html>
